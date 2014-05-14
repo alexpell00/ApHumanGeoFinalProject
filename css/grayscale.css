@@ -386,6 +386,9 @@ body {
 }
 .stay-connected{
     padding-bottom: 100px;
+    background: url("../img/dark-bg4.jpg") no-repeat bottom center fixed;
+    background-size: cover;
+    background-position-y: 0px;
 }
 .footer{
     background-color: #C6555D;
