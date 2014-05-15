@@ -149,7 +149,6 @@ a:focus {
 
 @media(min-width:767px) {
     .intro {
-        height: 100%;
         padding: 0;
     }
 
@@ -348,6 +347,7 @@ body {
 }
 .content-container {
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .intro-icon {
@@ -377,7 +377,9 @@ body {
     background-position-y: 0px;
 }
 .big-idea{
-
+    background: url("../img/cityscape-bg2.jpg") no-repeat bottom center fixed;
+    background-size: cover;
+    background-position-y: 0px;
 }
 .biblio{
     background-color: #1485CC;
@@ -400,4 +402,17 @@ body {
 .name{
     font-weight: bold;
     letter-spacing: 1.3px;
+}
+.takeaway{
+    background: url("../img/endofworld-bg1.jpg") no-repeat bottom center fixed;
+    background-size: cover;
+    background-position-y: 0px;
+    border-top: thick solid #AA9F9F;
+}
+.side-paralax{
+    position: relative;
+    overflow:hidden
+}
+.hide-text{
+    color: transparent;
 }
