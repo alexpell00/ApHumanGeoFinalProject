@@ -1,7 +1,7 @@
 
 setTimeout(checkDemensions, 10);
 var scrolled = $(window).scrollTop();
-scrollContent(scrolled);
+
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -13,8 +13,10 @@ $(window).scroll(function() {
     var scrolled = $(window).scrollTop();
     console.log("Scroll: " + scrolled);
     $('#1').css('background-position-y' , (-(scrolled*0.15)+100)+'px');
+    $('#intro').css('background-position-y' , (-(scrolled*0.15))+'px');
+    $('#4').css('background-position-y' , (-(scrolled*0.15)+425)+'px');
 
-   scrollContent(scrolled);
+   //scrollContent(scrolled);
 
     if (scrolled > $("#intro").outerHeight() - 25){
         addAnimation("#1-2","animated duration-2 bounceInLeft deley-P2 ");
@@ -22,7 +24,19 @@ $(window).scroll(function() {
         addAnimation("#1-4","animated duration-2 bounceInLeft deley-P2");
         $("#1").removeClass("hide-text");
     }
-
+    if (scrolled > ($("#intro").outerHeight() + $("#1").outerHeight() - 25)){
+        addAnimation("#2-2","animated duration-2 rollIn deley-P2 ");
+        addAnimation("#2-3","animated duration-2 rotateInUpLeft deley-P2");
+        addAnimation("#2-4","animated duration-2 rollIn deley-P2");
+        $("#2").removeClass("hide-text");
+    }
+    if (scrolled > ($("#intro").outerHeight() + $("#1").outerHeight() + $("#2").outerHeight() + $("#3").outerHeight()- 25)){
+        addAnimation("#4-2","animated duration-2 rollIn deley-P2 ");
+        addAnimation("#4-3","animated duration-2 rotateInUpLeft deley-P2");
+        addAnimation("#4-4","animated duration-2 rollIn deley-P2");
+        $("#4").removeClass("hide-text");
+    }
+    
     if (scrolled == 0){
         removeAnimation("#1-2");
         removeAnimation("#1-3");
@@ -40,7 +54,7 @@ function scrollContent(s) {
 
 
     //move text accordingly
-    var scrollModifier = 2;
+    var scrollModifier = .5;
     $('#intro-T').css('margin-left' , (-(s*scrollModifier))+'px');
     $('#1-T').css('margin-left' , (-((s-introHeight)*scrollModifier))+'px');
     $('#2-T').css('margin-left' , (-((s-oneHeight)*scrollModifier))+'px');

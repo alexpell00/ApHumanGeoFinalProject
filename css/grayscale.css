@@ -3,7 +3,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #1485CC;
 }
 
 html {
@@ -28,13 +28,17 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
         font-size: 20px;
-        line-height: 1.6;
+        line-height: 1.2;
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -285,7 +289,7 @@ a:focus {
     border: 1px solid #FFFC19;
     color: #FFFC19;
     background-color: transparent;
-    
+
 }
 
 .btn-default:hover,
@@ -294,6 +298,20 @@ a:focus {
     outline: 0;
     color: #000;
     background-color: #FFFC19;
+}
+
+.btn-dark {
+    border: 1px solid #1485CC;
+    color: #1485CC;
+    background-color: transparent;
+
+}
+.btn-dark:hover,
+.btn-dark:focus {
+    border: 1px solid #1485CC;
+    outline: 0;
+    color: #000;
+    background-color: #1485CC;
 }
 
 .btn-huge {
@@ -392,6 +410,7 @@ body {
     background: url("../img/dark-bg4.jpg") no-repeat bottom center fixed;
     background-size: cover;
     background-position-y: 0px;
+    width: 100%;
 }
 .footer{
     background-color: #C6555D;
@@ -416,4 +435,10 @@ body {
 }
 .hide-text{
     color: transparent;
+}
+.biblio-text{
+    width: 500px;
+}
+.bookcover{
+
 }
