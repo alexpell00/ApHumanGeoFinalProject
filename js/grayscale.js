@@ -11,7 +11,6 @@ $(window).scroll(function() {
     }
 
     var scrolled = $(window).scrollTop();
-    console.log("Scroll: " + scrolled);
     $('#1').css('background-position-y' , (-(scrolled*0.15)+100)+'px');
     $('#intro').css('background-position-y' , (-(scrolled*0.15))+'px');
     $('#4').css('background-position-y' , (-(scrolled*0.15)+425)+'px');
@@ -41,6 +40,20 @@ $(window).scroll(function() {
         removeAnimation("#1-2");
         removeAnimation("#1-3");
         removeAnimation("#1-4");
+
+        removeAnimation("#2-2");
+        removeAnimation("#2-3");
+        removeAnimation("#2-4");
+
+        removeAnimation("#4-2");
+        removeAnimation("#4-3");
+        removeAnimation("#4-4");
+
+        $("#1").addClass("hide-text");
+        $("#2").addClass("hide-text");
+        $("#4").addClass("hide-text");
+
+        console.log("Reseting scroll");
     }
 });
 function scrollContent(s) {
