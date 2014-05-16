@@ -15,7 +15,7 @@ $(window).scroll(function() {
     $('#intro').css('background-position-y' , (-(scrolled*0.15))+'px');
     $('#4').css('background-position-y' , (-(scrolled*0.15)+425)+'px');
 
-   scrollContent(scrolled);
+   //scrollContent(scrolled);
 
     if (scrolled > $("#intro").outerHeight() - 25){
         addAnimation("#1-2","animated duration-2 bounceInLeft deley-P2 ");
