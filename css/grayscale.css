@@ -39,6 +39,7 @@ p {
         width: 1000px;
         margin-right: auto;
         margin-left: auto;
+        color: #FFFFFF;
     }
 }
 
@@ -386,7 +387,7 @@ body {
     padding-bottom: 25px;
 }
 .importance{
-    background: url("../img/industry-bg5.jpg") no-repeat bottom center fixed;
+    background: url("../img/industry-bg5-dark.jpg") no-repeat bottom center fixed;
     background-size: cover;
     background-position-y: 0px;
 }
@@ -396,7 +397,7 @@ body {
     background-position-y: 0px;
 }
 .big-idea{
-    background: url("../img/cityscape-bg2.jpg") no-repeat bottom center fixed;
+    background: url("../img/cityscape-bg2-dark.jpg") no-repeat bottom center fixed;
     background-size: cover;
     background-position-y: 0px;
 }
@@ -424,7 +425,7 @@ body {
     letter-spacing: 1.3px;
 }
 .takeaway{
-    background: url("../img/endofworld-bg1.jpg") no-repeat bottom center fixed;
+    background: url("../img/endofworld-bg1-dark.jpg") no-repeat bottom center fixed;
     background-size: cover;
     background-position-y: 0px;
     border-top: thick solid #AA9F9F;
